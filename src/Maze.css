@@ -1,0 +1,99 @@
+.game-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd6e8, #ffeef5);
+}
+
+
+
+.maze {
+  display: grid;
+  gap: 0px;
+}
+
+.cell {
+  width: 48px;
+  height: 48px;
+  background: #eee;
+}
+
+/* Walls */
+.wall {
+  background: #ff6f91;
+}
+
+/* Man (player) */
+.player {
+  background-image: url("./assets/man.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Woman (goal) */
+.goal {
+  background-image: url("./assets/woman.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.valentine-card {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 214, 232, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 24px;
+  animation: fadeIn 0.6s ease;
+}
+
+.valentine-card h1 {
+  font-size: 2.5rem;
+  color: #d80a3e;
+}
+
+.valentine-card p {
+  font-size: 1.2rem;
+  max-width: 400px;
+  margin: 16px 0;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  background: #ff4d79;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  transform: scale(1.05);
+  background: #ff2d64;
+}
+
+.love-gif {
+  width: 300px;
+  max-width: 40vw;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.45);
+}
+
+.love-text {
+  font-size: 2.5rem;
+  color: #d80a3e;
+}
